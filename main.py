@@ -127,7 +127,7 @@ async def delete(ctx):
 @bot.command()
 async def help(ctx):
     embed=disnake.Embed(title="Команды")
-    embed.description("После любого изменения товаров пропишите >tovar для изменения embed сообщения. Оно само не меняется потому что я тупой и мне лень че-то придумывать")
+    embed.description = "После любого изменения товаров пропишите >tovar для изменения embed сообщения. Оно само не меняется потому что я тупой и мне лень че-то придумывать"
     embed.color = disnake.Color.blurple()
     embed.add_field(name=">tovar", value="Показывает список товаров", inline=False)
     embed.add_field(name=">add", value="Добавляет товар в список", inline=False)
